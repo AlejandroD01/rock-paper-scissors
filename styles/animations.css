@@ -1,0 +1,160 @@
+/* Base animations for the application */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 500ms ease forwards;
+}
+
+.fade-in-slow {
+  animation: fadeIn 800ms ease forwards;
+}
+
+.fade-in-delayed {
+  opacity: 0;
+  animation: fadeIn 500ms ease forwards;
+  animation-delay: 300ms;
+}
+
+/* Slide In Animation */
+@keyframes slideInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-up {
+  animation: slideInUp 500ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.slide-in-up-delayed {
+  opacity: 0;
+  animation: slideInUp 500ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: 300ms;
+}
+
+/* Scale Animation */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.scale-in {
+  animation: scaleIn 500ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.scale-in-delayed {
+  opacity: 0;
+  animation: scaleIn 500ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: 800ms;
+}
+
+/* Hover Effects */
+.hover-scale {
+  transition: transform 300ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.hover-scale:hover {
+  transform: scale(1.1);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Trail Animation Delays */
+.trail-item-0 {
+  opacity: 0;
+  animation: slideInUp 500ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.trail-item-1 {
+  opacity: 0;
+  animation: slideInUp 500ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: 100ms;
+}
+
+.trail-item-2 {
+  opacity: 0;
+  animation: slideInUp 500ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: 200ms;
+}
+
+.trail-item-3 {
+  opacity: 0;
+  animation: slideInUp 500ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: 300ms;
+}
+
+.trail-item-4 {
+  opacity: 0;
+  animation: slideInUp 500ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: 400ms;
+}
+
+.trail-item-5 {
+  opacity: 0;
+  animation: slideInUp 500ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: 500ms;
+}
+
+.trail-item-6 {
+  opacity: 0;
+  animation: slideInUp 500ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: 600ms;
+}
+
+.trail-item-7 {
+  opacity: 0;
+  animation: slideInUp 500ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: 700ms;
+}
+
+.trail-item-8 {
+  opacity: 0;
+  animation: slideInUp 500ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: 800ms;
+}
+
+.trail-item-9 {
+  opacity: 0;
+  animation: slideInUp 500ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: 900ms;
+}
+
+/* Counter Animation */
+@keyframes countUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.counter-wrapper {
+  overflow: hidden;
+}
+
+.counter-animation {
+  animation: countUp 800ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
