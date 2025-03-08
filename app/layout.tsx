@@ -27,7 +27,10 @@ export default function RootLayout({
 
 
 import './globals.css'
+import { title } from "process"
 
 export const metadata = {
-  generator: 'v0.dev'
+ title: 'Rock Paper Scissors Lizard Spock',
+ description: 'A fun and interactive game of Rock, Paper, Scissors, Lizard, Spock',
+ creator: 'Alejandro D',
 };
