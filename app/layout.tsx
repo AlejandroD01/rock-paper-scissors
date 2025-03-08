@@ -12,6 +12,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+
+      <link rel="icon" type="image/png" href="/favicon.png" />
+
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           {children}
@@ -26,5 +29,5 @@ export default function RootLayout({
 import './globals.css'
 
 export const metadata = {
-      generator: 'v0.dev'
-    };
+  generator: 'v0.dev'
+};
